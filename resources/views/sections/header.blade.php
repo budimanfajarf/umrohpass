@@ -10,7 +10,7 @@
   @endif
 </header>
 
-<div>
+<div class="single-item">
   <img class="w-full h-screen object-cover object-center" src="@asset('4aeac0541d1fe801bcfb4de749b328b6.jpeg')">
   <img class="w-full h-screen object-cover object-center" src="@asset('0603642a20bbe3cb3fb583cdb758a453.jpeg')">
 </div>

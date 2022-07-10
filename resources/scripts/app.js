@@ -15,8 +15,7 @@ const main = async (err) => {
   const header = $('#header');
   console.log('header', header);
   header.addClass('test');
-
-  // $()
+  $('.single-item').slick();
 };
 
 /**
