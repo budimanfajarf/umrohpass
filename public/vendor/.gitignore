@@ -1,5 +1,6 @@
-*hot-update*
 app.js
 app.js.map
 editor.js
 editor.js.map
+bud.app.editor.js
+bud.app.editor.js.map
