@@ -1,4 +1,5 @@
 import {domReady} from '@roots/sage/client';
+import 'slick-carousel';
 
 /**
  * app.main
@@ -14,6 +15,8 @@ const main = async (err) => {
   const header = $('#header');
   console.log('header', header);
   header.addClass('test');
+
+  // $()
 };
 
 /**
