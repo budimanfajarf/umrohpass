@@ -16,6 +16,15 @@ module.exports = async (app) => {
     })
 
     /**
+     * @see https://github.com/roots/bud/issues/1233
+     * The following specifies that $ is the default jQuery export:
+     * Now, in any module in our application, we can invoke jQuery with $. There is no need to import it.
+     */
+     .provide({
+      jquery: '$',
+    })
+
+    /**
      * These files should be processed as part of the build
      * even if they are not explicitly imported in application assets.
      */

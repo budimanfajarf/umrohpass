@@ -1,4 +1,4 @@
-<header class="banner">
+<header id="header" class="banner">
   <a class="brand text-5xl text-yellow-400" href="{{ home_url('/') }}">
     {!! $siteName !!}
   </a>
@@ -8,4 +8,6 @@
       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'echo' => false]) !!}
     </nav>
   @endif
+
+  <div class="hidden">test</div>
 </header>

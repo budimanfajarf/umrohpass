@@ -10,6 +10,10 @@ const main = async (err) => {
   }
 
   // application code
+  console.log('test');
+  const header = $('#header');
+  console.log('header', header);
+  header.addClass('test');
 };
 
 /**

@@ -2,12 +2,14 @@
   "app": {
     "js": [
       "runtime.194772.js",
-      "app.0fb155.js"
+      "app.e13b6f.js"
     ],
     "css": [
-      "app.16c6e8.css"
+      "app.910d3e.css"
     ],
-    "dependencies": []
+    "dependencies": [
+      "jquery"
+    ]
   },
   "editor": {
     "js": [
