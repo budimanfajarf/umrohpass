@@ -1,5 +1,5 @@
 <header class="banner">
-  <a class="brand text-5xl text-green-600" href="{{ home_url('/') }}">
+  <a class="brand text-5xl text-yellow-400" href="{{ home_url('/') }}">
     {!! $siteName !!}
   </a>
 
