@@ -7,5 +7,6 @@
 @import 'slick-carousel/slick/slick.css';
 
 /* Import custom CSS */
+@import './global.css';
 @import './header.css';
 @import './section-atf.css';
