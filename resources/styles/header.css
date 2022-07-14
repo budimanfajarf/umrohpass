@@ -1,0 +1,7 @@
+.nav-primary--desktop ul {
+  @apply inline-flex;
+}
+
+.nav-primary--desktop a {
+  @apply px-4 text-lg hover:text-gray-800;
+}

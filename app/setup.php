@@ -102,6 +102,19 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
+
+    /**
+     * Add ACF options page
+     */
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => 'Theme Settings',
+            'menu_title' => 'Theme Settings',
+            'menu_slug' => 'theme-settings',
+            'capability' => 'manage_options',
+            'icon_url' => 'dashicons-admin-settings',
+        ]);
+    }
 }, 20);
 
 /**

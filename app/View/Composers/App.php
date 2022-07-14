@@ -24,6 +24,8 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
+            'logo' => $this->logo(),
+            'placeholder_image_url' => $this->placeHolderImageUrl(),
         ];
     }
 
@@ -34,6 +36,32 @@ class App extends Composer
      */
     public function siteName()
     {
-        return get_bloginfo('name', 'display');
+        return get_bloginfo( 'name', 'display' );
+    }
+
+    /**
+     * Logo
+     */
+    public function logo()
+    {
+        return get_field( 'logo', 'options' );
+    }
+
+    /**
+     * Placeholder Image
+     */
+    public function placeHolderImage()
+    {
+        return get_field( 'placeholder_image', 'options' );
+    }
+
+    /**
+     * Placeholder Image URL
+     */
+    public function placeHolderImageUrl()
+    {
+        return $this->placeHolderImage()
+            ? $this->placeHolderImage()['url']
+            : 'https://via.placeholder.com/1280x720/cccccc/969696.png';
     }
 }

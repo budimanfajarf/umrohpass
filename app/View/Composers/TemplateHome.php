@@ -23,8 +23,14 @@ class TemplateHome extends Composer
     public function with()
     {
         return [
+            'atf_section' => $this->atfSection(),
             'registration_section' => $this->registrationSection(),
         ];
+    }
+
+    public function atfSection()
+    {
+        return get_field( 'atf_section' );
     }
 
     public function registrationSection()

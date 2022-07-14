@@ -6,6 +6,7 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    @include('template-home.section-registration')
+    @include('template-home.section-atf')
+    {{-- @include('template-home.section-registration') --}}
   @endwhile
 @endsection
