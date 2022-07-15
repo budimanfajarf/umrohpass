@@ -1,0 +1,6 @@
+.button {
+  @apply text-sm md:text-lg inline-flex items-center justify-center py-3 px-8 font-semibold;
+
+  border-radius: 40px;
+  background: linear-gradient(73.85deg, #C8A251 24.88%, #EED477 196.59%);
+}

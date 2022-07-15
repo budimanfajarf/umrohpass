@@ -18,10 +18,10 @@
 
 {{-- <img class="w-full h-full hidden md:block" src="@asset('desktop.png')">
 <img class="w-full h-full md:hidden" src="@asset('mobile.png')"> --}}
-<div class="selected-choice selected-choice--hotel">
+{{-- <div class="selected-choice selected-choice--hotel">
   <h5>Hotel</h5>
   <div>
     <img src="/wp-content/themes/umrohpass/public/hilton-madinah.png" alt="Hilton Madinah">
     <span>Hilton Madinah</span>
   </div>
-</div>
+</div> --}}

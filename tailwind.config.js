@@ -33,6 +33,7 @@ module.exports = {
       },
       colors: {
         primary: '#C8A251',
+        brandblue: '#16215B',
       },
     },
   },

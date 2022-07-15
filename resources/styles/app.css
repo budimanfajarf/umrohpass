@@ -8,5 +8,6 @@
 
 /* Import custom CSS */
 @import './global.css';
+@import './button.css';
 @import './header.css';
 @import './section-atf.css';
