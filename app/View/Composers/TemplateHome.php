@@ -24,6 +24,7 @@ class TemplateHome extends Composer
     {
         return [
             'atf_section' => $this->atfSection(),
+            'about_section' => $this->aboutSection(),
             'registration_section' => $this->registrationSection(),
         ];
     }
@@ -36,5 +37,11 @@ class TemplateHome extends Composer
     public function registrationSection()
     {
         return get_field( 'registration_section' );
+    }
+
+    public function aboutSection()
+    {
+        // dd(get_field( 'about_section' )['image']);
+        return get_field( 'about_section' );
     }
 }

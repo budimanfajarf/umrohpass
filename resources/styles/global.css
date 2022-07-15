@@ -6,3 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.gold {
+  background: linear-gradient(73.85deg, #C8A251 24.88%, #EED477 196.59%);
+}

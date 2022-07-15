@@ -23,7 +23,7 @@
             "label": "Logo",
             "name": "logo",
             "type": "image",
-            "instructions": "Used on header",
+            "instructions": "used on header",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -47,7 +47,7 @@
             "label": "Logo Alt",
             "name": "logo_alt",
             "type": "image",
-            "instructions": "Used on footer",
+            "instructions": "used on footer",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -89,6 +89,25 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_62d00419fd4b5",
+            "label": "About",
+            "name": "about",
+            "type": "textarea",
+            "instructions": "used on footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Umroh Pass adalah travel umrah terpercaya yang menyediakan pelayanan ekslusif dengan fasilitas bintang 5. Fleksibel dalam mengatur perjalanan tanpa harus ke kantor. Membuat umrah lebih mudah agar menjadi pengalaman ibadah terbaik Anda.",
+            "placeholder": "Umroh Pass adalah travel umrah terpercaya yang menyediakan pelayanan ekslusif dengan fasilitas bintang 5. Fleksibel dalam mengatur perjalanan tanpa harus ke kantor. Membuat umrah lebih mudah agar menjadi pengalaman ibadah terbaik Anda.",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_62cf9aa40f410",
@@ -333,5 +352,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657799485
+    "modified": 1657799951
 }

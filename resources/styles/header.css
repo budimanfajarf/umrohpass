@@ -1,7 +1,11 @@
-.nav-primary--desktop ul {
-  @apply inline-flex;
+.nav-primary ul {
+  @apply text-lg;
 }
 
-.nav-primary--desktop a {
-  @apply px-4 text-lg hover:text-gray-800;
+.nav-primary--desktop ul {
+  @apply inline-flex space-x-10  xl:space-x-14;
+}
+
+.nav-primary--mobile ul {
+  @apply space-y-2.5 pt-5 pb-11;
 }
