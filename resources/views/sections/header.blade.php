@@ -1,4 +1,4 @@
-<header id="header" class="banner container mx-auto px-6 py-2 flex justify-between items-center h-24">
+<header id="header" class="banner container mx-auto px-6 py-2 flex justify-between items-center h-[110px]">
   <a class="font-bold text-2xl lg:text-4xl" href="{{ home_url('/') }}">
     @if ($logo)
       <img
