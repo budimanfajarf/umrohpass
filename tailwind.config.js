@@ -36,6 +36,7 @@ module.exports = {
         primary: '#C8A251',
         brandblue: '#16215B',
         brandblack: '#211F25',
+        brandgray: '#6E87A4',
       },
       fontFamily: {
         sans: ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
@@ -58,6 +59,9 @@ module.exports = {
           lineHeight: 1.5,
         }],
         xl: ['1.25rem', {
+          lineHeight: 1.5,
+        }],
+        xlp: ['1.375rem', {
           lineHeight: 1.5,
         }],
         '2xl': ['1.5rem', {

@@ -1,5 +1,5 @@
 @if ($about_section)
-  <section id="about" class="py-16 md:py-20 container">
+  <section id="about" class="my-16 md:my-24 container">
     @if ($about_section['title'])
       <x-heading-section :title="$about_section['title']" />
     @endif

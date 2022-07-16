@@ -17,3 +17,7 @@
 .slick-dots .slick-active button {
   background: var(--bg-primary);
 }
+
+.package-slider .slick-dots {
+  @apply mt-auto absolute bottom-0 mb-6 w-full;
+}

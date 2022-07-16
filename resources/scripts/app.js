@@ -16,6 +16,7 @@ const main = async (err) => {
   mobileMenu();
   testimonialSlider();
   gallerySlider();
+  packageSlider();
 };
 
 const test = () => {
@@ -61,6 +62,7 @@ const testimonialSlider = () => {
     slidesToScroll: 3,
     autoplay: true,
     arrows: false,
+    autoplaySpeed: 1000 * 5,
     responsive: [
       {
         breakpoint: 1280,
@@ -104,8 +106,9 @@ const gallerySlider = () => {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
-    // autoplay: true,
+    autoplay: true,
     arrows: false,
+    autoplaySpeed: 1000 * 5,
     responsive: [
       {
         breakpoint: 1280,
@@ -139,6 +142,19 @@ const gallerySlider = () => {
       // settings: "unslick"
       // instead of a settings object
     ]
+  });
+}
+
+const packageSlider = () => {
+  $('.js-package-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 1000 * 5,
   });
 }
 

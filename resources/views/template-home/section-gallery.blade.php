@@ -1,5 +1,5 @@
 @if ($gallery_section)
-  <section id="gallery" class="py-16 md:py-20 container">
+  <section id="gallery" class="my-16 md:my-24 container">
     @if ($gallery_section['title'])
       <x-heading-section :title="$gallery_section['title']" />
     @endif
