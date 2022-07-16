@@ -1,10 +1,21 @@
 {
-  "name": "roots/sage",
+  "name": "monocle/umrohpass",
   "type": "wordpress-theme",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "WordPress starter theme with a modern development workflow",
-  "homepage": "https://roots.io/sage/",
+  "description": "Umrohpass theme, use https://roots.io/sage/ for the theme starter",
+  "homepage": "https://budi.day",
   "authors": [
+    {
+      "name": "Monocle",
+      "email": "hello@monocle.id",
+      "homepage": "https://monocle.id"
+    },
+    {
+      "name": "Budi",
+      "email": "budimanfajarf@gmail.com",
+      "homepage": "https://github.com/budimanfajarf"
+    },
     {
       "name": "Ben Word",
       "email": "ben@benword.com",
