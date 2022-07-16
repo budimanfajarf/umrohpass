@@ -9,14 +9,14 @@
         @foreach ($faq_section['items'] as $item)
           @if ($item['title'])
             <div class="px-5 md:px-14 border border-brandgray border-opacity-40 rounded-ten">
-              <button class="js-accordion-trigger accordion-trigger py-8 font-bold space-x-5 flex items-center justify-between w-full text-left">
+              <button class="js-accordion-trigger accordion-trigger py-6 md:py-8 font-bold space-x-5 flex items-center justify-between w-full text-left">
                 <span>{!! $item['title'] !!}</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L12 15L17 10H7Z" fill="black"/>
                 </svg>
               </button>
 
-              <div class="hidden prose max-w-none py-1 md:pb-10">
+              <div class="hidden prose max-w-none pb-6 md:pt-1 md:pb-10">
                 {!! $item['description'] !!}
               </div>
             </div>
