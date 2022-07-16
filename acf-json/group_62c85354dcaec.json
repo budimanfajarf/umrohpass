@@ -72,10 +72,10 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_62cf9f07ebd01",
-                    "label": "Button Label",
-                    "name": "button_label",
-                    "type": "text",
+                    "key": "field_62d2b0ccffb78",
+                    "label": "Primary Link",
+                    "name": "primary_link",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -84,17 +84,13 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Booking Sekarang!",
-                    "placeholder": "Booking Sekarang!",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array"
                 },
                 {
-                    "key": "field_62cf9f21ebd02",
-                    "label": "Why Choose Us",
-                    "name": "why_choose_us",
-                    "type": "text",
+                    "key": "field_62d2b0e8ffb79",
+                    "label": "Secondary Link",
+                    "name": "secondary_link",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -103,11 +99,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Mengapa memilih kami?",
-                    "placeholder": "Mengapa memilih kami?",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array"
                 },
                 {
                     "key": "field_62cfa0cb2f4ae",
@@ -1164,5 +1156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657917764
+    "modified": 1657975385
 }

@@ -15,15 +15,29 @@
         <div class="mb-40 prose-sm md:prose-base max-w-[412px]">
           {!! $atf_section['description'] !!}
         </div>
-        <a href="#" class="button button--tight mb-5">
-          {!! $atf_section['button_label'] !!}
-        </a>
-        <div class="prose-sm md:prose-base">
-          <a href="#" class="flex items-center">
-            {!! $atf_section['why_choose_us'] !!}
-            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+
+        @if ($primary_link = $atf_section['primary_link'])
+          <a
+            href="{{ $primary_link['url'] }}"
+            target="{{ $primary_link['target'] }}"
+            class="button button--tight mb-5"
+          >
+            {!! $primary_link['title'] !!}
           </a>
-        </div>
+        @endif
+
+        @if ($secondary_link = $atf_section['secondary_link'])
+          <div class="prose-sm md:prose-base">
+            <a
+            href="{{ $secondary_link['url'] }}"
+            target="{{ $secondary_link['target'] }}"
+            class="flex items-center"
+            >
+              <span>{!! $secondary_link['title'] !!}</span>
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+          </div>
+        @endif
       </div>
     </div>
     <div class="absolute bottom-0 hidden lg:flex justify-center w-full">
