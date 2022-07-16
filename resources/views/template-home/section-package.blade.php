@@ -31,7 +31,7 @@
               @if ($item['plane'])
                 <div class="text-sm md:text-lg mb-8 md:mb-5">
                   @if ($item['plane']['label'])
-                    <h4 class="mb-4 md:mb-2.5 font-bold">
+                    <h4 class="mb-3.5 md:mb-2.5 font-bold">
                       {!! $item['plane']['label'] !!}
                     </h4>
                   @endif
@@ -55,7 +55,7 @@
               @if ($item['hotel'])
                 <div class="text-sm md:text-lg mb-8 md:mb-5">
                   @if ($item['hotel']['label'])
-                    <h4 class="mb-4 md:mb-2.5 font-bold">
+                    <h4 class="mb-3.5 md:mb-2.5 font-bold">
                       {!! $item['hotel']['label'] !!}
                     </h4>
                   @endif
@@ -79,7 +79,7 @@
               @if ($item['accommodation'])
                 <div class="text-sm md:text-lg mb-8 md:mb-5">
                   @if ($item['accommodation']['label'])
-                    <h4 class="mb-4 md:mb-2.5 font-bold">
+                    <h4 class="mb-3.5 md:mb-2.5 font-bold">
                       {!! $item['accommodation']['label'] !!}
                     </h4>
                   @endif

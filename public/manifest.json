@@ -7,6 +7,8 @@
   "hilton-madinah.png": "hilton-madinah.png",
   ".gitkeep": ".gitkeep",
   "app.js.map": "vendor/app.js.map",
+  "app.hot-update.js.map": "app.e27b4512cec2ed991985.hot-update.js.map",
   "editor.js.map": "editor.js.map",
+  "editor.hot-update.js.map": "editor.e27b4512cec2ed991985.hot-update.js.map",
   "bud.app.editor.js.map": "vendor/bud.app.editor.js.map"
 }
