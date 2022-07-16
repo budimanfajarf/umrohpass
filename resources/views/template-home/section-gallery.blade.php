@@ -1,12 +1,12 @@
 @if ($gallery_section)
-  <section id="gallery" class="my-16 md:my-24 container">
+  <section id="gallery" class="py-16 md:py-24 container">
     @if ($gallery_section['title'])
       <x-heading-section :title="$gallery_section['title']" />
     @endif
 
     @if ($gallery_section['items'])
     <div class="max-w-[1080px] mx-auto">
-      <div class="js-gallery-slider -mx-3">
+      <div class="js-gallery-slider gallery-slider -mx-3">
         @foreach($gallery_section['items'] as $item)
           <div class="px-3 w-full">
             <a

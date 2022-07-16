@@ -1,5 +1,5 @@
 @if ($package_section)
-  <section id="package" class="my-16 md:my-24 container">
+  <section id="package" class="pb-16 md:pb-24 container">
     @if ($package_section['title'])
       <x-heading-section :title="$package_section['title']" />
     @endif
