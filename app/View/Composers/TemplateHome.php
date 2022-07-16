@@ -6,8 +6,6 @@ use Roots\Acorn\View\Composer;
 
 class TemplateHome extends Composer
 {
-    // use Traits\Helpers;
-
     /**
      * List of views served by this composer.
      *

@@ -1,0 +1,28 @@
+.footer {
+  color: #FAFAFA;
+}
+
+.footer-navigation {
+  @apply grid grid-cols-2 gap-1 lg:grid-cols-1;
+}
+
+.footer-navigation a {
+  @apply inline-block transition-all border-b border-transparent;
+}
+
+.footer-navigation a:hover {
+  @apply text-white border-white;
+}
+
+.social-media-link svg,
+.social-media-link img {
+  @apply object-cover object-center;
+
+  width: 26px;
+  height: 26px;
+
+  @screen md {
+    width: 34px;
+    height: 34px;
+  }
+}

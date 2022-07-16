@@ -50,7 +50,7 @@
     {!!
       wp_nav_menu([
         'theme_location' => 'primary_navigation',
-        'menu_class' => 'nav',
+        'menu_class' => 'primary-navigation',
         'echo' => false
       ])
     !!}
