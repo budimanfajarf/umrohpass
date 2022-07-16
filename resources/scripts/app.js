@@ -17,6 +17,7 @@ const main = async (err) => {
   testimonialSlider();
   gallerySlider();
   packageSlider();
+  accordion();
 };
 
 const test = () => {
@@ -156,6 +157,13 @@ const packageSlider = () => {
     arrows: false,
     autoplaySpeed: 1000 * 5,
   });
+}
+
+const accordion = () => {
+  $('.js-accordion-trigger').on('click', function(e) {
+    $(this).toggleClass('active');
+    $($(this).siblings()).slideToggle();
+  })
 }
 
 /**

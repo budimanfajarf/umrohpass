@@ -35,17 +35,13 @@ class TemplateHome extends Composer
             'gallery_section' => $this->gallerySection(),
             'package_section' => $this->packageSection(),
             'registration_section' => $this->registrationSection(),
+            'faq_section' => $this->faqSection(),
         ];
     }
 
     public function atfSection()
     {
         return get_field( 'atf_section' );
-    }
-
-    public function registrationSection()
-    {
-        return get_field( 'registration_section' );
     }
 
     public function aboutSection()
@@ -66,5 +62,15 @@ class TemplateHome extends Composer
     public function packageSection()
     {
         return get_field( 'package_section' );
+    }
+
+    public function registrationSection()
+    {
+        return get_field( 'registration_section' );
+    }
+
+    public function faqSection()
+    {
+        return get_field( 'faq_section' );
     }
 }

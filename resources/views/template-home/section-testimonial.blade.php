@@ -20,7 +20,7 @@
           @foreach($testimonial_section['items'] as $item)
             @if ($item && $item['name'] && $item['testimony'])
               <div class="px-2.5 w-full">
-                <div class="w-full p-3 pt-7 pb-5 md:p-6 md:pb-7 bg-white rounded-[10px] max-w-[180px] md:max-w-[235px] mx-auto h-[230px] md:h-[300px]">
+                <div class="w-full p-3 pt-7 pb-5 md:p-6 md:pb-7 bg-white rounded-ten max-w-[180px] md:max-w-[235px] mx-auto h-[230px] md:h-[300px]">
                   @php($photo_url = $item['photo']['url'] ?? "https://ui-avatars.com/api/?name={$item['name']}&background=C8A251&color=fff" )
 
                   <img

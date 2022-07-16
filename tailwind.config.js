@@ -74,6 +74,9 @@ module.exports = {
           lineHeight: 1.5,
         }],
       },
+      borderRadius: {
+        'ten': '.625rem', // 10px
+      }
     },
   },
   plugins: [

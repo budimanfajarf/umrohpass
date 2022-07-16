@@ -1,5 +1,5 @@
 @if ($gallery_section)
-  <section id="gallery" class="py-16 md:py-24 container">
+  <section id="gallery" class="py-8 md:py-12 pt-16 md:pt-24 container">
     @if ($gallery_section['title'])
       <x-heading-section :title="$gallery_section['title']" />
     @endif
@@ -12,7 +12,7 @@
             <a
               href="{{ $item['instagram_url'] ?: 'javascript:void(0)' }}"
               target="{{ $item['instagram_url'] ? '_blank' : '' }}"
-              class="gallery block relative bg-white rounded-[10px] w-[150px] md:w-[200px] lg:w-[235px] mx-auto h-[200px] md:h-[280px] lg:h-[320px] overflow-hidden"
+              class="gallery block relative bg-white rounded-ten w-[150px] md:w-[200px] lg:w-[235px] mx-auto h-[200px] md:h-[280px] lg:h-[320px] overflow-hidden"
             >
               @php($image_url = $item['image']['url'] ?: $placeholder_image_url)
 

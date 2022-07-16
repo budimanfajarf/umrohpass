@@ -1,5 +1,5 @@
 @if ($package_section)
-  <section id="package" class="pb-16 md:pb-24 container">
+  <section id="package" class="py-8 md:py-12 container">
     @if ($package_section['title'])
       <x-heading-section :title="$package_section['title']" />
     @endif
@@ -7,7 +7,7 @@
     @if ($package_section['items'])
       <div class="grid grid-cols-2 gap-6 md:gap-10">
         @foreach ($package_section['items'] as $item)
-          <div class="col-span-2 lg:col-span-1 rounded-[10px] overflow-hidden flex flex-col">
+          <div class="col-span-2 lg:col-span-1 rounded-ten overflow-hidden flex flex-col">
             <div class="w-full relative bg-gray-300">
               @if ($item['gallery_images'])
                 <div class="js-package-slider package-slider">
@@ -27,7 +27,7 @@
               </div>
             </div>
 
-            <div class="border border-t-0 border-brandgray border-opacity-50 rounded-b-[10px] pt-8 pb-9 px-5 md:p-9 h-full">
+            <div class="border border-t-0 border-brandgray border-opacity-40 rounded-b-[10px] pt-8 pb-9 px-5 md:p-9 h-full">
               @if ($item['plane'])
                 <div class="text-sm md:text-lg mb-8 md:mb-5">
                   @if ($item['plane']['label'])

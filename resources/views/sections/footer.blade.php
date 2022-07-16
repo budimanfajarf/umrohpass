@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info bg-brandblue">
   {{-- @php(dynamic_sidebar('sidebar-footer')) --}}
   @if (has_nav_menu('footer_navigation'))
     <nav class="nav-footer" aria-label="{{ wp_get_nav_menu_name('footer_navigation') }}">

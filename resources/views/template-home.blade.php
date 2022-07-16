@@ -12,5 +12,6 @@
     @include('template-home.section-gallery')
     @include('template-home.section-package')
     {{-- @include('template-home.section-registration') --}}
+    @include('template-home.section-faq')
   @endwhile
 @endsection

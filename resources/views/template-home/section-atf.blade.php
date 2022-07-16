@@ -8,7 +8,7 @@
   >
     <div class="bg-[#EEF1F4] opacity-50 absolute inset-0 w-full h-full"></div>
     <div class="container my-auto relative">
-      <div class="rounded-[10px] bg-brandblue p-6 pt-12 pb-16 md:px-8 max-w-[526px]">
+      <div class="rounded-ten bg-brandblue p-6 pt-12 pb-16 md:px-8 max-w-[526px]">
         <h3 class="mb-5 md:mb-10 text-[20px] leading-normal md:text-2xl md:leading-normal font-bold">
           {!! $atf_section['title'] !!}
         </h3>
