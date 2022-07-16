@@ -1,0 +1,7 @@
+.accordion-trigger svg {
+  @apply transition-all duration-300;
+}
+
+.accordion-trigger.active svg {
+  transform: rotate(180deg);
+}

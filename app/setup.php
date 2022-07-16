@@ -14,6 +14,7 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('sage/googlefont', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
     bundle('app')->enqueue();
 }, 100);
 
@@ -102,6 +103,19 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
+
+    /**
+     * Add ACF options page
+     */
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => 'Theme Settings',
+            'menu_title' => 'Theme Settings',
+            'menu_slug' => 'theme-settings',
+            'capability' => 'manage_options',
+            'icon_url' => 'dashicons-admin-settings',
+        ]);
+    }
 }, 20);
 
 /**

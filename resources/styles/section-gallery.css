@@ -1,0 +1,7 @@
+.gallery .overlay {
+  @apply opacity-0 transition-opacity duration-200;
+}
+
+.gallery:hover .overlay {
+  @apply opacity-100;
+}

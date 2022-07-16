@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply text-brandblack bg-white;
+}
+
+.bg-primary {
+  background: var(--bg-primary);
+}

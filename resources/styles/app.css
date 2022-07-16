@@ -1,4 +1,21 @@
+@import './_var.css';
+
+/* Import tailwind CSS */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Import library CSS */
 @import 'slick-carousel/slick/slick.css';
+
+/* Import customized library CSS */
+@import './slick.css';
+
+/* Import custom CSS */
+@import './global.css';
+@import './button.css';
+@import './accordion.css';
+@import './header.css';
+@import './section-atf.css';
+@import './section-gallery.css';
+@import './footer.css';
