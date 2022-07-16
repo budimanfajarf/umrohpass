@@ -16,7 +16,7 @@
       @endif
 
       @if ($testimonial_section['items'])
-        <div class="js-slider -mx-2.5 lg:max-w-[60%] xl:max-w-[70%] 2xl:max-w-[735px]">
+        <div class="js-testimonial-slider -mx-2.5 lg:max-w-[60%] xl:max-w-[70%] 2xl:max-w-[735px]">
           @foreach($testimonial_section['items'] as $item)
             @if ($item && $item['name'] && $item['testimony'])
               <div class="px-2.5 w-full">

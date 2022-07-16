@@ -1,5 +1,9 @@
 module.exports = {
-  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
+  content: [
+      './index.php',
+      './app/**/*.php',
+      './resources/**/*.{php,vue,js}',
+  ],
   theme: {
     screens: {
       'sm': '640px',
@@ -39,6 +43,9 @@ module.exports = {
       lineHeight: 1.5,
       fontSize: {
         xs: ['.75rem', {
+          lineHeight: 1.5,
+        }],
+        xsp: ['.8125rem', {
           lineHeight: 1.5,
         }],
         sm: ['.875rem', {

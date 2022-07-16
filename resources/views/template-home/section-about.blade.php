@@ -1,9 +1,7 @@
 @if ($about_section)
   <section id="about" class="py-16 md:py-20 container">
     @if ($about_section['title'])
-      <h3 class="text-2xl leading-normal md:text-[32px] font-bold text-gray-900 text-center mb-8">
-        {{ $about_section['title'] }}
-      </h3>
+      <x-heading-section :title="$about_section['title']" />
     @endif
 
     <div class="flex flex-col space-y-8 lg:space-y-0 lg:space-x-28 lg:flex-row lg:items-center lg:justify-between">

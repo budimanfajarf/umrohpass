@@ -6,6 +6,8 @@ use Roots\Acorn\View\Composer;
 
 class TemplateHome extends Composer
 {
+    // use Traits\Helpers;
+
     /**
      * List of views served by this composer.
      *
@@ -26,6 +28,7 @@ class TemplateHome extends Composer
             'atf_section' => $this->atfSection(),
             'about_section' => $this->aboutSection(),
             'testimonial_section' => $this->testimonialSection(),
+            'gallery_section' => $this->gallerySection(),
             'registration_section' => $this->registrationSection(),
         ];
     }
@@ -48,5 +51,10 @@ class TemplateHome extends Composer
     public function testimonialSection()
     {
         return get_field( 'testimonial_section' );
+    }
+
+    public function gallerySection()
+    {
+        return get_field( 'gallery_section' );
     }
 }
