@@ -14,7 +14,7 @@
               target="{{ $item['instagram_url'] ? '_blank' : '' }}"
               class="gallery block relative bg-white rounded-ten w-[150px] md:w-[200px] lg:w-[235px] mx-auto h-[200px] md:h-[280px] lg:h-[320px] overflow-hidden"
             >
-              @php($image_url = $item['image']['url'] ?: $placeholder_image_url)
+              @php($image_url = $item['image']['url'] ?? $placeholder_image_url)
 
               <img
                 src="{{ $image_url }}"
