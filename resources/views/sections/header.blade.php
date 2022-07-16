@@ -41,7 +41,7 @@
 @if (has_nav_menu('primary_navigation'))
 <div
   id="mobile-menu"
-  class="absolute bg-white hidden w-full"
+  class="absolute bg-white hidden w-full z-10"
 >
   <nav
     class="nav-primary nav-primary--mobile container"

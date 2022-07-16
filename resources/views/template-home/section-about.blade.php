@@ -1,13 +1,17 @@
 @if ($about_section)
   <section id="about" class="py-16 md:py-20 container">
-    <h4 class="text-2xl leading-normal md:text-[32px] font-bold tracking-tight text-gray-900 text-center mb-8">
-      {{ $about_section['title'] }}
-    </h4>
+    @if ($about_section['title'])
+      <h3 class="text-2xl leading-normal md:text-[32px] font-bold text-gray-900 text-center mb-8">
+        {{ $about_section['title'] }}
+      </h3>
+    @endif
 
     <div class="flex flex-col space-y-8 lg:space-y-0 lg:space-x-28 lg:flex-row lg:items-center lg:justify-between">
-      <div class="text-justify prose-sm md:prose-2xl">
-        {{ $about_section['description']}}
-      </div>
+      @if ($about_section['description'])
+        <div class="text-justify prose-sm md:prose-2xl">
+          {!! $about_section['description'] !!}
+        </div>
+      @endif
 
       @if($about_section['image'])
         <img

@@ -28,12 +28,40 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
-      },
       colors: {
         primary: '#C8A251',
         brandblue: '#16215B',
+        brandblack: '#211F25',
+      },
+      fontFamily: {
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      },
+      lineHeight: 1.5,
+      fontSize: {
+        xs: ['.75rem', {
+          lineHeight: 1.5,
+        }],
+        sm: ['.875rem', {
+          lineHeight: 1.5,
+        }],
+        base: ['1rem', {
+          lineHeight: 1.5,
+        }],
+        lg: ['1.125rem', {
+          lineHeight: 1.5,
+        }],
+        xl: ['1.25rem', {
+          lineHeight: 1.5,
+        }],
+        '2xl': ['1.5rem', {
+          lineHeight: 1.5,
+        }],
+        '3xl': ['1.875rem', {
+          lineHeight: 1.5,
+        }],
+        '3xlp': ['2rem', {
+          lineHeight: 1.5,
+        }],
       },
     },
   },

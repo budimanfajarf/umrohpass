@@ -14,7 +14,7 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('sage/googlefont', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    wp_enqueue_style('sage/googlefont', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
     bundle('app')->enqueue();
 }, 100);
 

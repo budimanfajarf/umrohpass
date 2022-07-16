@@ -1,0 +1,19 @@
+.slick-dots {
+  @apply flex items-center justify-center space-x-2 mt-5 md:mt-6;
+}
+
+.slick-dots button {
+  @apply text-transparent rounded-full bg-white;
+
+  width: 14px;
+  height: 14px;
+
+  @screen md {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.slick-dots .slick-active button {
+  background: var(--bg-primary);
+}
