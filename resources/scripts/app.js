@@ -12,12 +12,13 @@ const main = async (err) => {
 
   // application code
   // test();
-  // header();
+  toggleHeader();
   mobileMenu();
   testimonialSlider();
   gallerySlider();
   packageSlider();
   accordion();
+  activeMenu();
 };
 
 const test = () => {
@@ -28,29 +29,31 @@ const test = () => {
   $('.single-item').slick();
 }
 
-const header = () => {
+const toggleHeader = () => {
   const $header = $('#header');
   const HEADER_HEIGHT = $header.height();
   let lastY = 0;
 
-  window.addEventListener('scroll', function() {
-    if (window.scrollY < HEADER_HEIGHT) {
+  $(window).on('scroll', function() {
+    if (window.scrollY < HEADER_HEIGHT) return;
+
+    if (window.scrollY > lastY) {
+      // Hide header
+      $header.addClass('hide');
+      $('#mobile-menu').slideUp(300);
+      lastY = window.scrollY;
       return;
     }
 
-    if (window.scrollY > lastY) {
-      $header.addClass('hide')
-    } else {
-      $header.removeClass('hide')
-    }
-
+    // Show header
+    $header.removeClass('hide');
     lastY = window.scrollY;
   })
 }
 
 const mobileMenu = () => {
   $('.js-mobile-menu-trigger').on('click', function() {
-    $('#mobile-menu').slideToggle();
+    $('#mobile-menu').slideToggle(300);
   });
 }
 
@@ -163,6 +166,49 @@ const accordion = () => {
   $('.js-accordion-trigger').on('click', function(e) {
     $(this).toggleClass('active');
     $($(this).siblings()).slideToggle();
+  })
+}
+
+const activeMenu = () => {
+  // Init active menu
+  $(`a[href$='#atf']`).addClass('active');
+
+
+  const $header = $('#header');
+  const HEADER_HEIGHT = $header.height();
+
+  const ids = [
+    'atf',
+    'about',
+    'testimonial',
+    'gallery',
+    'package',
+    'registration',
+    'faq',
+  ]
+
+  $(window).on('scroll', function(e) {
+    ids.forEach((id) => {
+      const $section = $(`#${id}`);
+      const $sectionMenu = $(`a[href$='#${id}']`);
+
+      if ($section.length === 0 || $sectionMenu.length === 0) return;
+
+      const topSection = $section.offset().top;
+      const bottomSection = topSection + $section.innerHeight();
+
+      const finalTopSection = id === 'atf'
+        ? - HEADER_HEIGHT
+        : topSection - (HEADER_HEIGHT * 1.2);
+
+      const finalBottomSection = bottomSection - ($section.innerHeight() / 2);
+
+      if (window.scrollY > finalTopSection && window.scrollY < finalBottomSection) {
+        return $sectionMenu.addClass('active');
+      }
+
+      return $sectionMenu.removeClass('active');
+    });
   })
 }
 
