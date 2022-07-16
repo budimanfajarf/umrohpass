@@ -5,6 +5,7 @@
     @endif
 
     @if ($gallery_section['items'])
+    <div class="max-w-[1080px] mx-auto">
       <div class="js-gallery-slider -mx-3">
         @foreach($gallery_section['items'] as $item)
           <div class="px-3 w-full">
@@ -32,6 +33,7 @@
           </div>
         @endforeach
       </div>
+    </div>
     @endif
   </section>
 @endif

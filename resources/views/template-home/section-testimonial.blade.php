@@ -24,7 +24,7 @@
                   @php($photo_url = $item['photo']['url'] ?? "https://ui-avatars.com/api/?name={$item['name']}&background=C8A251&color=fff" )
 
                   <img
-                    class="mb-3 md:mb-8 w-[70px] md:w-[85px] h-[70px] md:h-[85px] rounded-full shadow-lg mx-auto"
+                    class="mb-3 md:mb-8 w-[70px] md:w-[85px] h-[70px] md:h-[85px] rounded-full mx-auto"
                     src="{{ $photo_url }}"
                     alt="{{ $item['name'] }}"
                   >
