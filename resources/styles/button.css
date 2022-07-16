@@ -1,5 +1,5 @@
 .button {
-  @apply text-sm md:text-lg inline-flex items-center justify-center py-3 font-semibold text-white px-12;
+  @apply text-sm md:text-lg inline-flex items-center justify-center py-3 font-semibold text-white px-12 transition-all;
 
   border-radius: 40px;
   background: var(--bg-primary);
@@ -7,4 +7,8 @@
 
 .button--tight {
   @apply px-8;
+}
+
+.button:hover {
+  @apply scale-105 drop-shadow-xl;
 }
