@@ -1,11 +1,14 @@
 module.exports = {
   content: [
-      './index.php',
-      './app/**/*.php',
-      './resources/**/*.{php,vue,js}',
+    './index.php',
+    './app/**/*.php',
+    './resources/**/*.{php,vue,js}',
   ],
   theme: {
     screens: {
+      's': '375px',
+      // => @media (min-width: 375px) { ... }
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
