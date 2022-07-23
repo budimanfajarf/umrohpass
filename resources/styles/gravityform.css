@@ -75,3 +75,16 @@
 .-gform .gform_wrapper.gravity-theme .content {
   @apply font-semibold;
 }
+
+.-gform img.gform_ajax_spinner {
+  display: none !important;
+}
+
+.-gform .gform_confirmation_message {
+  @apply text-center prose-sm md:prose-xl mb-4 md:mb-8 font-medium text-brandblue;
+}
+
+.section-registration .-gform .gform_wrapper,
+.section-registration .-gform .gform_confirmation_wrapper {
+  @apply pt-8 md:pt-14;
+}

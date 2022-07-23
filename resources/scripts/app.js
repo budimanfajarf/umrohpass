@@ -20,6 +20,7 @@ const main = async (err) => {
   accordion();
   activeMenu();
   selectBatch();
+  // submitGravityForm();
 };
 
 const test = () => {
@@ -214,12 +215,27 @@ const activeMenu = () => {
 }
 
 const selectBatch = () => {
-  $('.select-batch select').on('change', function (e) {
-    const value = this.value;
+  // $('.select-batch select').on('change', function (e) {
+  //   const value = this.value;
+  //   const splittedValue = value.split(' - ');
+  //   $('.departure-date .content').html(splittedValue[0]);
+  //   $('.return-date .content').html(splittedValue[1]);
+  // });
+
+  window.setInterval(() => {
+    const value = $('.select-batch select').val();
+    if (!value) return;
+
     const splittedValue = value.split(' - ');
     $('.departure-date .content').html(splittedValue[0]);
     $('.return-date .content').html(splittedValue[1]);
-  })
+  }, 500);
+}
+
+const submitGravityForm = () => {
+  $('.-gform .gform_wrapper.gravity-theme .button').on('click', function (e) {
+    $(this).val('Loading...');
+  });
 }
 
 /**
