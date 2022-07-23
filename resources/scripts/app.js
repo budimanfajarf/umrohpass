@@ -1,4 +1,4 @@
-import {domReady} from '@roots/sage/client';
+import { domReady } from '@roots/sage/client';
 import 'slick-carousel';
 
 /**
@@ -19,6 +19,8 @@ const main = async (err) => {
   packageSlider();
   accordion();
   activeMenu();
+  selectBatch();
+  // submitGravityForm();
 };
 
 const test = () => {
@@ -34,7 +36,7 @@ const toggleHeader = () => {
   const HEADER_HEIGHT = $header.height();
   let lastY = 0;
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     if (window.scrollY < HEADER_HEIGHT) return;
 
     if (window.scrollY > lastY) {
@@ -52,7 +54,7 @@ const toggleHeader = () => {
 }
 
 const mobileMenu = () => {
-  $('.js-mobile-menu-trigger').on('click', function() {
+  $('.js-mobile-menu-trigger').on('click', function () {
     $('#mobile-menu').slideToggle(300);
   });
 }
@@ -163,7 +165,7 @@ const packageSlider = () => {
 }
 
 const accordion = () => {
-  $('.js-accordion-trigger').on('click', function(e) {
+  $('.js-accordion-trigger').on('click', function (e) {
     $(this).toggleClass('active');
     $($(this).siblings()).slideToggle();
   })
@@ -187,7 +189,7 @@ const activeMenu = () => {
     'faq',
   ]
 
-  $(window).on('scroll', function(e) {
+  $(window).on('scroll', function (e) {
     ids.forEach((id) => {
       const $section = $(`#${id}`);
       const $sectionMenu = $(`a[href$='#${id}']`);
@@ -210,6 +212,30 @@ const activeMenu = () => {
       return $sectionMenu.removeClass('active');
     });
   })
+}
+
+const selectBatch = () => {
+  // $('.select-batch select').on('change', function (e) {
+  //   const value = this.value;
+  //   const splittedValue = value.split(' - ');
+  //   $('.departure-date .content').html(splittedValue[0]);
+  //   $('.return-date .content').html(splittedValue[1]);
+  // });
+
+  window.setInterval(() => {
+    const value = $('.select-batch select').val();
+    if (!value) return;
+
+    const splittedValue = value.split(' - ');
+    $('.departure-date .content').html(splittedValue[0]);
+    $('.return-date .content').html(splittedValue[1]);
+  }, 500);
+}
+
+const submitGravityForm = () => {
+  $('.-gform .gform_wrapper.gravity-theme .button').on('click', function (e) {
+    $(this).val('Loading...');
+  });
 }
 
 /**
