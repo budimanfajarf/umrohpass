@@ -22,6 +22,6 @@
   @apply border-primary font-bold;
 }
 
-/* .header.is-mobile-menu-expanded {
+.header.is-mobile-menu-expanded {
   @apply drop-shadow-none shadow-none;
-} */
+}
