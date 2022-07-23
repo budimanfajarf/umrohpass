@@ -71,3 +71,7 @@
     min-height: 46px;
   }
 }
+
+.-gform .gform_wrapper.gravity-theme .content {
+  @apply font-semibold;
+}
