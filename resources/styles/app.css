@@ -10,6 +10,7 @@
 
 /* Import customized library CSS */
 @import './slick.css';
+@import './gravityform.css';
 
 /* Import custom CSS */
 @import './global.css';
