@@ -38,7 +38,8 @@ module.exports = {
       colors: {
         primary: '#C8A251',
         brandblue: '#16215B',
-        brandblack: '#211F25',
+        // brandblack: '#211F25',
+        brandblack: '#221F26',
         brandgray: '#6E87A4',
       },
       fontFamily: {

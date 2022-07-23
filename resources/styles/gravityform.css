@@ -14,7 +14,7 @@
 .-gform .gform_wrapper.gravity-theme input[type="week"],
 .-gform .gform_wrapper.gravity-theme select,
 .-gform .gform_wrapper.gravity-theme textarea {
-  @apply border border-brandgray border-opacity-40 rounded-ten py-3 px-4 md:px-5;
+  @apply border border-brandgray border-opacity-40 rounded-ten py-3 px-4 lg:px-5 text-sm lg:text-lg;
 }
 
 .-gform .gform_wrapper.gravity-theme .gform_fields {
@@ -24,4 +24,50 @@
 .-gform .gform_wrapper.gravity-theme .gsection,
 .-gform .spacer.gfield {
   display: none !important;
+}
+
+.-gform .gform_wrapper.gravity-theme .gfield_label {
+  @apply text-sm lg:text-lg font-normal mb-2 lg:mb-3;
+}
+
+.-gform {
+  @apply text-sm lg:text-lg;
+}
+
+.-gform .gform_wrapper.gravity-theme select {
+  appearance: none !important;
+  background: url("../images/dropdown.svg") no-repeat 98% center;
+  padding-right: 32px;
+}
+
+.-gform .gform_wrapper.gravity-theme .button {
+  @apply my-0 mx-auto w-full;
+
+  max-width: 425px;
+}
+
+.-gform .gform_wrapper.gravity-theme .gform_footer,
+.-gform .gform_wrapper.gravity-theme .gform_page_footer {
+  @apply p-0 m-0 mt-7 md:mt-10;
+}
+
+/* .-gform .gform_wrapper.gravity-theme .description,
+.-gform .gform_wrapper.gravity-theme .gfield_description,
+.-gform .gform_wrapper.gravity-theme .gsection_description,
+.-gform .gform_wrapper.gravity-theme .instruction {
+  @apply text-xs lg:text-base;
+} */
+
+.-gform .gform_wrapper.gravity-theme .gfield_validation_message,
+.-gform .gform_wrapper.gravity-theme .validation_message {
+  @apply border-none mt-1 lg:mt-2 p-0 bg-transparent text-xs lg:text-base;
+}
+
+@media only screen and (max-width: 641px) {
+  .-gform
+    .gform_wrapper.gravity-theme
+    input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):not([type="file"]) {
+    @apply leading-none;
+    min-height: 46px;
+  }
 }

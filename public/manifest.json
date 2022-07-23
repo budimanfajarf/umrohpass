@@ -5,6 +5,8 @@
   "vendor/app.js": "vendor/app.js",
   "jpeg": "0603642a20bbe3cb3fb583cdb758a453.jpeg",
   "hilton-madinah.png": "hilton-madinah.png",
+  "dropdown.svg": "dropdown.svg",
+  "images/dropdown.svg": "images/dropdown.svg",
   ".gitkeep": ".gitkeep",
   "app.js.map": "vendor/app.js.map",
   "editor.js.map": "editor.js.map",

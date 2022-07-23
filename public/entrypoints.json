@@ -5,6 +5,10 @@
       "vendor/app.js",
       "app.js"
     ],
+    "svg": [
+      "images/arrow-down.svg",
+      "images/dropdown.svg"
+    ],
     "dependencies": [
       "jquery"
     ]
