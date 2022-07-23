@@ -1,5 +1,5 @@
 <header id="header"
-  class="banner header sticky top-0 w-full bg-white z-50 transition-all duration-300 shadow-sm drop-shadow-sm">
+  class="banner header sticky top-0 w-full bg-white z-50 transition-all duration-300 --shadow-sm --drop-shadow-sm">
   <div class="container flex flex-wrap justify-between items-center h-20 md:h-[110px]">
     <a class="font-bold text-2xl md:text-4xl" href="{{ home_url('/') }}">
       @if ($logo)
