@@ -1,6 +1,6 @@
 @if ($registration_section && $registration_section['form'])
   <section id="registration" class="section-registration py-8 md:py-12 container">
-    <div class="border border-brandgray border-opacity-40 rounded-[10px] p-5 pb-6 md:p-10 xl:px-14 xl:py-11">
+    <div class="border border-brandgray border-opacity-40 rounded-[10px] px-5 py-9 md:p-10 xl:px-14 xl:py-11">
       @if ($registration_section['title'])
         <x-heading-section :title="$registration_section['title']" class="mb-6 md:mb-6" />
       @endif
