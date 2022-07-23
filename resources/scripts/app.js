@@ -44,7 +44,7 @@ const toggleHeader = () => {
       $header.addClass('hide');
 
       $('#mobile-menu').slideUp(300);
-      $header.removeClass('is-mobile-menu-expanded');
+      // $header.removeClass('is-mobile-menu-expanded');
 
       lastY = window.scrollY;
       return;
@@ -58,11 +58,11 @@ const toggleHeader = () => {
 
 const mobileMenu = () => {
   $('.js-mobile-menu-trigger').on('click', function () {
-    if ($('#mobile-menu').css('display') === 'block') {
-      $('#header').removeClass('is-mobile-menu-expanded');
-    } else {
-      $('#header').addClass('is-mobile-menu-expanded');
-    }
+    // if ($('#mobile-menu').css('display') === 'block') {
+    //   $('#header').removeClass('is-mobile-menu-expanded');
+    // } else {
+    //   $('#header').addClass('is-mobile-menu-expanded');
+    // }
 
     const time = 300;
     $('#mobile-menu').slideToggle(time);
