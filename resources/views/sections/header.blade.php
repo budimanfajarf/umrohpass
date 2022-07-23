@@ -1,6 +1,6 @@
 <div id="header"
-  class="banner header --sticky fixed top-0 w-full bg-white z-50 transition-all duration-300 shadow-sm drop-shadow-sm">
-  <header class="--relative --z-20">
+  class="banner header sticky top-0 w-full bg-white z-50 transition-all duration-300 shadow-sm drop-shadow-sm">
+  <header class="relative z-20">
     <div class="container flex flex-wrap justify-between items-center h-20 md:h-[110px]">
       <a class="font-bold text-2xl md:text-4xl" href="{{ home_url('/') }}">
         @if ($logo)
@@ -33,7 +33,7 @@
 
   {{-- Mobile Menu --}}
   @if (has_nav_menu('primary_navigation'))
-    <div id="mobile-menu" class="hidden --absolute --top-0 --z-10 --pt-20 --md:pt-[110px] --bg-white --w-full">
+    <div id="mobile-menu" class="hidden absolute top-0 z-10 pt-20 md:pt-[110px] bg-white w-full">
       <nav class="nav-primary nav-primary--mobile container"
         aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
         {!! wp_nav_menu([
