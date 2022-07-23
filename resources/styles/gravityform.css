@@ -88,3 +88,11 @@
 .section-registration .-gform .gform_confirmation_wrapper {
   @apply pt-8 md:pt-14;
 }
+
+.-gform .gform_wrapper .gform_validation_errors {
+  @apply mt-0 mb-5 md:mb-10;
+}
+
+.-gform .gform_wrapper .gform_validation_errors > h2 {
+  @apply text-xs lg:text-base;
+}
