@@ -2,7 +2,7 @@
   @php($background_image_url = $atf_section['background_image']['url'] ?? $placeholder_image_url)
 
   <section id="atf"
-    class="section-atf relative pt-10 pb-20 w-full bg-cover bg-center text-white flex flex-col bg-fixed"
+    class="section-atf relative pt-10 pb-20 w-full bg-cover bg-center text-white flex flex-col lg:bg-fixed"
     style="background-image: url('{{ $background_image_url }}')">
     <div class="bg-[#EEF1F4] opacity-50 absolute inset-0 w-full h-full"></div>
     <div class="container my-auto relative">

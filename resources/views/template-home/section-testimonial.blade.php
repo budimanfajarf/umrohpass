@@ -2,7 +2,7 @@
   @php($background_image_url = $testimonial_section['background_image']['url'] ?? $placeholder_image_url)
 
   <section id="testimonial" style="background-image: url('{{ $background_image_url }}')"
-    class="pt-14 pb-28 md:py-20 lg:pb-[60px] bg-cover bg-center relative bg-fixed">
+    class="pt-14 pb-28 md:py-20 lg:pb-[60px] bg-cover bg-center relative lg:bg-fixed">
     <div class="absolute inset-0 w-full h-full bg-[#EEF1F4] opacity-50"></div>
 
     <div
