@@ -1,13 +1,16 @@
 {
-  "app.css": "app.620e47.css",
-  "app.js": "app.b91837.js",
-  "editor.css": "editor.31d6cf.css",
-  "editor.js": "editor.8b878c.js",
-  "runtime.js": "runtime.194772.js",
-  "vendor/app.js": "vendor/app.5bfb76.js",
-  "jpeg": "0603642a20bbe3cb3fb583cdb758a453.8784cf.jpeg",
-  "hilton-madinah.png": "hilton-madinah.a008fc.png",
-  "dropdown.svg": "dropdown.2d38ec.svg",
-  "images/dropdown.svg": "images/dropdown.2d38ec.svg",
-  ".gitkeep": ".gitkeep.31d6cf"
+  "app.js": "app.js",
+  "editor.js": "editor.js",
+  "vendor/bud.app.editor.js": "vendor/bud.app.editor.js",
+  "vendor/app.js": "vendor/app.js",
+  "jpeg": "0603642a20bbe3cb3fb583cdb758a453.jpeg",
+  "hilton-madinah.png": "hilton-madinah.png",
+  "dropdown.svg": "dropdown.svg",
+  "images/dropdown.svg": "images/dropdown.svg",
+  ".gitkeep": ".gitkeep",
+  "app.js.map": "vendor/app.js.map",
+  "app.hot-update.js.map": "app.73e32fbaf7305de50ab2.hot-update.js.map",
+  "editor.js.map": "editor.js.map",
+  "editor.hot-update.js.map": "editor.73e32fbaf7305de50ab2.hot-update.js.map",
+  "bud.app.editor.js.map": "vendor/bud.app.editor.js.map"
 }
