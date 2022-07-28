@@ -11,7 +11,6 @@ const main = async (err) => {
   }
 
   // application code
-  // test();
   toggleHeader();
   mobileMenu();
   testimonialSlider();
@@ -23,29 +22,25 @@ const main = async (err) => {
   // submitGravityForm();
 };
 
-const test = () => {
-  console.log('test');
-  const header = $('#header');
-  console.log('header', header);
-  header.addClass('test');
-  $('.single-item').slick();
-}
+const $header = $('#header');
+const $mobileMenu = $('#mobile-menu');
+
+const HEADER_HEIGHT = $header.height();
 
 const toggleHeader = () => {
-  const $header = $('#header');
-  const HEADER_HEIGHT = $header.height();
   let lastY = 0;
 
   $(window).on('scroll', function () {
     if (window.scrollY < HEADER_HEIGHT) return;
 
     if (window.scrollY > lastY) {
+      // Hide mobile menu
+      // $mobileMenu.slideUp(300)
+      $mobileMenu.addClass('hide');
+      $header.removeClass('is-mobile-menu-expanded');
+
       // Hide header
       $header.addClass('hide');
-
-      $('#mobile-menu').slideUp(300);
-      // $header.removeClass('is-mobile-menu-expanded');
-
       lastY = window.scrollY;
       return;
     }
@@ -58,23 +53,17 @@ const toggleHeader = () => {
 
 const mobileMenu = () => {
   $('.js-mobile-menu-trigger').on('click', function () {
-    // if ($('#mobile-menu').css('display') === 'block') {
-    //   $('#header').removeClass('is-mobile-menu-expanded');
+    // if ($mobileMenu.css('display') === 'block') {
+    //   $header.removeClass('is-mobile-menu-expanded');
     // } else {
-    //   $('#header').addClass('is-mobile-menu-expanded');
+    //   $header.addClass('is-mobile-menu-expanded');
     // }
 
-    const time = 300;
-    $('#mobile-menu').slideToggle(time);
+    // const time = 300;
+    // $mobileMenu.slideToggle(time);
 
-    // setTimeout(() => {
-    //   if ($('#mobile-menu').css('display') === 'block') {
-    //     $('#header').addClass('is-mobile-menu-expanded');
-    //     return;
-    //   }
-
-    //   $('#header').removeClass('is-mobile-menu-expanded');
-    // }, time + 150);
+    $mobileMenu.toggleClass('hide');
+    $header.toggleClass('is-mobile-menu-expanded');
   });
 }
 

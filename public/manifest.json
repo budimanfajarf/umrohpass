@@ -9,8 +9,6 @@
   "images/dropdown.svg": "images/dropdown.svg",
   ".gitkeep": ".gitkeep",
   "app.js.map": "vendor/app.js.map",
-  "app.hot-update.js.map": "app.73e32fbaf7305de50ab2.hot-update.js.map",
   "editor.js.map": "editor.js.map",
-  "editor.hot-update.js.map": "editor.73e32fbaf7305de50ab2.hot-update.js.map",
   "bud.app.editor.js.map": "vendor/bud.app.editor.js.map"
 }
