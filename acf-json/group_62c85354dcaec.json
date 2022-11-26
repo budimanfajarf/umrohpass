@@ -181,7 +181,7 @@
                     "key": "field_62cff413fe018",
                     "label": "Description",
                     "name": "description",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -190,11 +190,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Umroh Pass adalah travel umrah terpercaya yang menyediakan pelayanan ekslusif dengan fasilitas bintang 5. Fleksibel dalam mengatur perjalanan tanpa harus ke kantor. Membuat umrah lebih mudah agar menjadi pengalaman ibadah terbaik Anda.",
-                    "placeholder": "Umroh Pass adalah travel umrah terpercaya yang menyediakan pelayanan ekslusif dengan fasilitas bintang 5. Fleksibel dalam mengatur perjalanan tanpa harus ke kantor. Membuat umrah lebih mudah agar menjadi pengalaman ibadah terbaik Anda.",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
                 },
                 {
                     "key": "field_62cff42dfe019",
@@ -900,7 +900,7 @@
                                     "key": "field_62cffb461a113",
                                     "label": "Text",
                                     "name": "text",
-                                    "type": "text",
+                                    "type": "wysiwyg",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -910,10 +910,10 @@
                                         "id": ""
                                     },
                                     "default_value": "",
-                                    "placeholder": "Kereta (Business Class) \/ Minibus",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 0,
+                                    "delay": 0
                                 }
                             ]
                         },
@@ -1057,8 +1057,8 @@
             "sub_fields": [
                 {
                     "key": "field_62cffc2fcc418",
-                    "label": "Title",
-                    "name": "title",
+                    "label": "Tittle",
+                    "name": "tittle",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -1090,7 +1090,7 @@
                     "collapsed": "",
                     "min": 0,
                     "max": 0,
-                    "layout": "table",
+                    "layout": "block",
                     "button_label": "",
                     "sub_fields": [
                         {
@@ -1116,7 +1116,7 @@
                             "key": "field_62cffc5fcc41b",
                             "label": "Description",
                             "name": "description",
-                            "type": "textarea",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1126,10 +1126,10 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nullam habitant diam accumsan, in sit penatibus accumsan pretium. Auctor condimentum ullamcorper morbi et velit commodo. Malesuada mauris et purus aliquet odio. Cras consequat malesuada luctus urna quam ultricies id.",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": ""
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
                         }
                     ]
                 }
@@ -1156,5 +1156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657975385
+    "modified": 1669455034
 }
