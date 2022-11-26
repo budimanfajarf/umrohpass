@@ -91,9 +91,9 @@
                   @endif
 
                   @if ($item['accommodation']['text'])
-                    <p>
+                    <div class="prose-sm max-w-none">
                       {!! $item['accommodation']['text'] !!}
-                    </p>
+                    </div>
                   @endif
                 </div>
               @endif

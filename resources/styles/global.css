@@ -12,3 +12,13 @@ body {
 .bg-primary {
   background: var(--bg-primary);
 }
+
+.prose :first-child,
+.prose-sm :first-child {
+  @apply mt-0;
+}
+
+.prose :last-child,
+.prose-sm :last-child {
+  @apply mb-0;
+}

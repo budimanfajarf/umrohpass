@@ -18,7 +18,7 @@
                 </svg>
               </button>
 
-              <div class="hidden prose max-w-none px-5 md:px-14 pb-6 md:pt-1 md:pb-10">
+              <div class="hidden prose-sm md:prose max-w-none px-5 md:px-14 pb-6 md:pt-1 md:pb-10">
                 {!! $item['description'] !!}
               </div>
             </div>
